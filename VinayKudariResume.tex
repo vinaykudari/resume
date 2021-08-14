@@ -1,0 +1,194 @@
+\documentclass[a4paper,20pt]{article}
+
+\usepackage{latexsym}
+\usepackage{amssymb}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.530in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.500in}
+\addtolength{\textheight}{1in}
+
+\urlstyle{rm}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+    \vspace{-10pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-6pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItemClean}[1]{
+    \item\small{
+        {#1 \vspace{-2pt}}
+    }
+}
+
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeItemWithoutTitle}[1]{
+    \item\small{
+        {\vspace{-2pt}}
+    }
+}
+
+\newcommand{\resumeSubheading}[4]{
+    \vspace{-1pt}\item
+        \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+            \textbf{#1} & #2 \\
+            \textit{#3} & \textit{#4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\projectheading}[3]{
+    \vspace{-1pt}\item
+        \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+            \textbf{#1} & \textbf{#2} #3\\
+    \end{tabular*}\vspace{-5pt}
+}
+
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-3pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-----------------------------
+%%%%%%  CV STARTS HERE  %%%%%%
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+    \vspace{1pt} \textbf{{\LARGE Vinay Kudari}} & \href{mailto:vinay.kudari30@gmail.com}{vinay.kudari30@gmail.com}\\
+    \hspace{0.15pt} \href{https://vinaykudari.me}{https://vinaykudari.me} & ~~~+91-6303138388 \\
+\end{tabular*}
+%----------HEADING-----------------
+
+\vspace{5pt}
+
+%-----------EDUCATION-----------------
+\section{Education}
+    \resumeSubHeadingListStart
+        \resumeSubheading
+          {State University of New York at Buffalo}{Buffalo, NY}
+          {Master of Science in Computer Science}{Sep. 2021 -- Present}
+        \resumeSubheading
+          {National Institute of Technology, Durgapur}{West Bengal, India}
+          {Bachelor of Technology in Computer Science and Engineering}{July 2014 -- May 2018}
+            \begin{itemize}
+                \item [$*$] {Gender Classification Using CNN -- Graduate Thesis under Dr. Dakshina Ranjan Kisku}
+                    \begin{itemize}
+                        \item [$\circ$] {Implemented deep neural network architecture by Gil Levi \& Tal Hassner using PyTorch and tweaked the network layout}
+                        \item [$\circ$] {Explored various second-order optimisation techniques such as newton’s and qwasi-newtons algorithms}
+                        \item [$\circ$] {Augmented the images of Adience dataset into different resolutions and trained the model which achieved 86.3\% accuracy}
+                    \end{itemize}
+            \end{itemize}
+    \resumeSubHeadingListEnd
+%-----------EDUCATION-----------------
+
+%-----------SKILLS-----------------
+\section{Skills}
+    \resumeSubHeadingListStart
+    \resumeSubItem{Languages}{~~~~~~~~~~~~~~Python, SQL, Bash, Dart, JavaScript}
+    \resumeSubItem{Scientific Libraries}{~~Pandas, NumPy, Matplotlib, Scikit, SQLAlchemy}
+    \resumeSubItem{Tools}{~~~~~~~~~~~~~~~~~~~~~~Docker, Compose, Kubernetes, PostgreSQL, Redis, Sentry}
+    \resumeSubItem{Frameworks}{~~~~~~~~~~~~Django, Flask, Flutter, PyTorch, PySpark, FastAI, OpenCV}
+    \resumeSubItem{Cloud}{~~~~~~~~~~~~~~~~~~~~~GCP, Heroku, AWS}
+\resumeSubHeadingListEnd
+%-----------SKILLS-----------------
+
+\vspace{-5pt}
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+    \resumeSubHeadingListStart
+    \resumeSubheading{Brave Orbit}{Capetown, South Africa}
+        {Software Development Engineer (Full-time)}{Jan. 2020 - Aug. 2021}
+            \resumeItemListStart
+                \resumeItemClean
+                    {Assisted in re-developing a popular healthcare app into a cross-platform mobile application using Flutter. Involved in features such as setting up BLoC, database and network layers}
+                  \resumeItemClean
+                    {Designed \& developed HIPAA compliant scalable push notification service for a medication reminder app}
+                  \resumeItemClean
+                    {Implemented an API on top of NIH and MPR APIs to fetch medication data and interactions between them. Caching was setup to optimise the API calls}
+                  \resumeItemClean
+                    {Developed a clinical surveying platform that sends out email and SMS alerts to patients and collects feedback on a regular schedule}
+                  \resumeItemClean
+                    {Lead a team in developing a custom ERP system using Django for a supermarket that was critical in helping them survive a 5X growth due to the COVID-19 outbreak}
+                  \resumeItemClean
+                    {Orchestrated docker container cluster using Kubernetes and CI/CD pipelines were setup to deploy on GKE}
+                  \resumeItemClean
+                    {Setup NGINX reverse proxy server with SSL to forward the traffic to services based on the sub-domain}
+              \resumeItemListEnd
+    \resumeSubheading
+    	{Accenture}{Bangalore, India}
+    	{Advanced Application Engineering Analyst (Full-Time)}{Sep. 2018 -  Dec. 2019}
+    	    \resumeItemListStart
+                \resumeItemClean
+                  {Transformed large volumes of drug life cycle data and hierarchies of drug materials were generated using PL/SQL procedures on a multi-node Redshift cluster}
+                \resumeItemClean
+                  {Performed trend analysis on drug potency data using PySpark on a EMR cluster to find the performance variability of drug analytical methods. Several statistical measures are performed and colour coded control charts are visualised on a spotfire dashboard}
+                \resumeItemClean
+                  {Assisted in designing and development of an automated data validation ETL pipeline leveraging microservice architecture to validate data across a wide range of data sources that resulted in 70\% effort reduction and 75\% cost saving on infrastructure}
+    	    \resumeItemListEnd
+    \resumeSubheading
+    	{Vishakapatnam Port Trust}{Visakhapatnam, India}
+    	{Software Intern (Full-Time)}{May 2017 -  July 2017}
+    	    \resumeItemListStart
+            	\resumeItemClean
+                  {Developed a prototype for a computer vision-based monitoring solution for the port cargo handling area}
+                \resumeItemClean
+                  {Created datasets and trained the model using support vector machine (SVM) to identify cargo lease area and cargo type}
+    	    \resumeItemListEnd
+    \resumeSubHeadingListEnd
+%-----------EXPERIENCE-----------------
+
+\vspace{-5pt}
+
+%-----------PROJECTS-----------------
+\section{Relevant Projects}
+    \resumeSubHeadingListStart
+        \projectheading{DeepJet Autonomous Car (work in progress)}{\href{https://github.com/vinaykudari/eureka-bot}{code}}{}
+            \resumeItemListStart
+                \resumeItemClean
+                    {Assembled the car with Jetson Nano as its brain. Implemented WebSocket to exchange data with the controller}
+                \resumeItemClean
+                    {Cross-platform mobile app was build to control the car. WebRTC protocol is used to receive real-time camera feed}
+            \resumeItemListEnd
+        \projectheading{TCAH - Find Nearby Doctors}{\href{https://github.com/Nutrix-India/treat-covid-at-home-api}{code}}{}
+            \resumeItemListStart
+                \resumeItemClean
+                    {Built a server-less API service which returns the nearest (considering the duration taken to reach) doctors who are registered with us}
+            \resumeItemListEnd
+        \projectheading{Mask Detection REST API}{\href{https://github.com/vinaykudari/mask-detection-api}{code}}{}
+            \resumeItemListStart
+                \resumeItemClean
+                    {Built a server-less deep-learning API service using Django REST Framework to classify images into 3 buckets (with mask, without mask, improperly worn mask)}
+                \resumeItemClean
+                    {CI/CD pipeline was setup to automatically build the docker container and deploy in Cloud Run}
+            \resumeItemListEnd
+    \resumeSubHeadingListEnd
+%-----------PROJECTS-----------------
+
+\end{document}

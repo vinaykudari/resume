@@ -1,5 +1,6 @@
 \usepackage{latexsym}
 \usepackage{amssymb}
+\usepackage{amsmath}
 \usepackage[empty]{fullpage}
 \usepackage{titlesec}
 \usepackage{marvosym}

@@ -71,10 +71,3 @@
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
 \newcommand{\resumeItemListStart}{\begin{itemize}}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
-
-\renewcommand{\section}[1]{
-	{%
-		\color{gray}%
-		\Large\sectioncolor{#1}%
-	}
-}

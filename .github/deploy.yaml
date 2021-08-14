@@ -1,5 +1,7 @@
 name: "Generate document"
-on: [push]
+on:
+  push:
+    branches: [ main ]
 defaults:
   run:
     working-directory: .

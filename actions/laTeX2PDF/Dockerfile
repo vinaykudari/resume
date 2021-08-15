@@ -4,7 +4,7 @@ LABEL "maintainer"="Vinay Kudari <vinay.kudari30@gmail.com>"
 LABEL "repository"="https://github.com/vinaykudari/resume"
 LABEL "homepage"="https://github.com/vinaykudari/resume"
 LABEL "com.github.actions.name"="Convert to PDF"
-LABEL "com.github.actions.description"="Convert documents to PDF using xelatex."
+LABEL "com.github.actions.description"="Convert documents to PDF using pdflatex."
 LABEL "com.github.actions.icon"="code"
 LABEL "com.github.actions.color"="blue"
 

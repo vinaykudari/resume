@@ -13,7 +13,11 @@ RUN apt-get update && \
     texlive-latex-base \
     texlive-fonts-extra \
     texlive-fonts-recommended \
+    texlive-generic-recommended \
+    texlive-lang-english \
     texlive-latex-extra \
+    texlive-luatex \
+    texlive-xetex && \
     apt-get autoclean && apt-get --purge --yes autoremove && \
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 

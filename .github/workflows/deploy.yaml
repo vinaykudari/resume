@@ -20,6 +20,7 @@ jobs:
         with:
           name: files
           path: public/
+
       - name: Commit files
         id: commit
         run: |
@@ -32,7 +33,7 @@ jobs:
             git commit -m "Last updated on $(date '+%Y-%m-%d')" -a
             echo "::set-output name=push::true"
           fi
-        shell: bash
+
     - name: Push changes
         if: steps.commit.outputs.push == 'true'
         uses: ad-m/github-push-action@master

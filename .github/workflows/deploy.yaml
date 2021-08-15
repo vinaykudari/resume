@@ -33,6 +33,7 @@ jobs:
             git commit -m "Last updated on $(date '+%Y-%m-%d')" -a
             echo "::set-output name=push::true"
           fi
+        shell: bash
 
     - name: Push changes
         if: steps.commit.outputs.push == 'true'

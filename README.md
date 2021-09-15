@@ -5,7 +5,7 @@ After every change made to the LaTeX file GitHub actions will generate PDF and p
 ### Why? 
 - You get resume versioning support right out of the box for every company you apply
 - By looking at the commit message you can make sure that it the latest resume
-- You may serve the latest version of your resume by using `nbviewer` with this format
+- You may serve the latest version of your resume by using `nbviewer` using this format
 
   `https://nbviewer.jupyter.org/github/<username>/<repository_name>/blob/<company_name-role>/<latex_filename>.pdf`
   

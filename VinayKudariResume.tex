@@ -145,39 +145,37 @@
         {Full Stack Developer}{Jan. 2020 - Aug. 2021}
             \resumeItemListStart
                 \resumeItemClean
-                    {Assisted in re-developing a popular healthcare app into a cross-platform mobile application using Flutter. Involved in features such as setting up BLoC, database and network layers}
+                    {Re-Built a popular healthcare app into a cross-platform mobile application using Flutter. Involved in features such as setting up BLoC, database and network layers}
                   \resumeItemClean
-                    {Designed \& developed HIPAA compliant scalable push notification service for a medication reminder app}
+                    {Designed \& developed HIPAA compliant scalable push notification service leveraging Cloud Tasks, Functions & Firebase Cloud Messaging}
                   \resumeItemClean
-                    {Implemented an API on top of the NIH and MPR APIs to retrieve medication data and interactions. Caching was set up to improve the performance of API calls}
+                    {Developed an API on top of the NIH and MPR APIs to retrieve medication data and interactions. Caching was set up to improve the performance}
                   \resumeItemClean
                     {Developed a clinical surveying platform that sends out email and SMS alerts to patients and collects feedback periodically}
                   \resumeItemClean
-                    {Lead a team in developing a custom ERP system using Django for a supermarket that was critical in helping them survive a 5X growth due to the COVID-19 outbreak}
+                    {Lead a team in developing a ERP system using Django, custom features such as multi-product substitutions, combo-products are developed}
                   \resumeItemClean
-                    {Orchestrated docker container cluster using Kubernetes and CI/CD pipelines were setup to deploy on GKE}
+                    {Kubernetes CI/CD workflows were setup on GitLab to test, build and deploy API's on cloud}
                   \resumeItemClean
-                    {Setup NGINX reverse proxy server with SSL to forward the traffic to services based on the sub-domain}
+                    {NGINX reverse proxy server with SSL was setup to forward the traffic to services based on custom conditions}
               \resumeItemListEnd
     \resumeSubheading
     	{Accenture}{Bangalore, India}
     	{Advanced Application Engineering Analyst}{Sep. 2018 -  Dec. 2019}
     	    \resumeItemListStart
                 \resumeItemClean
-                  {Transformed large volumes of drug life cycle data and hierarchies of drug materials were generated using PL/SQL procedures on a multi-node Redshift cluster}
+                  {Transformed huge volumes of drug life cycle data and hierarchies of drug materials were generated using PL/SQL procedures on Redshift cluster}
                 \resumeItemClean
-                  {Performed trend analysis on drug potency data using PySpark on a EMR cluster to find the performance variability of drug analytical methods. Several statistical measures are performed and colour coded control charts are visualised on a spotfire dashboard}
+                  {Performed trend analysis on drug potency data using PySpark on a EMR cluster to forecast potential raw materials affecting the drug quality. Several statistical measures are performed and colour coded control charts are visualised on a spotfire dashboard}
                 \resumeItemClean
-                  {Assisted in designing and development of an automated data validation ETL pipeline leveraging microservice architecture to validate data across a wide range of data sources that resulted in 70\% effort reduction and 75\% cost saving on infrastructure}
+                  {Designed and developed automated data validation ETL pipeline leveraging microservice architecture to validate data across a wide range of data sources that resulted in 70\% effort reduction and 75\% cost saving on infrastructure}
     	    \resumeItemListEnd
     \resumeSubheading
     	{Vishakapatnam Port Trust}{Visakhapatnam, India}
     	{Software Intern}{May 2017 -  July 2017}
     	    \resumeItemListStart
-            	\resumeItemClean
-                  {Developed a prototype for a computer vision-based monitoring solution for the port cargo handling area}
                 \resumeItemClean
-                  {Created datasets and trained the model using support vector machine (SVM) to identify cargo lease area and cargo type}
+                  {Created datasets and trained machine learning models to identify cargo type and size of lease area}
     	    \resumeItemListEnd
     \resumeSubHeadingListEnd
 
@@ -185,10 +183,15 @@
 %-----------PROJECTS-----------------
 \section{Relevant Projects}
     \resumeSubHeadingListStart
+        \projectheading{Maze Solver using Reinforcement Learning}{}{}{}
+            \resumeItemListStart
+                \resumeItemClean
+                    {Designed a custom 2D grid world, implemented RL algorithms like Q-Learning, Monte Carlo and Deep Q-Network from scratch}
+            \resumeItemListEnd
         \projectheading{DeepJet Autonomous Car (work in progress)}{\href{https://github.com/vinaykudari/eureka-bot}{code}}{}
             \resumeItemListStart
                 \resumeItemClean
-                    {Assembled the car with Jetson Nano as its brain. Implemented WebSocket to exchange data with the controller}
+                    {Assembled the car with Jetson Nano as its brain. WebSocket was used to exchange data with the controller}
                 \resumeItemClean
                     {Cross-platform mobile app was build to control the car. WebRTC protocol is used to receive real-time camera feed}
             \resumeItemListEnd
@@ -197,7 +200,7 @@
                 \resumeItemClean
                     {Built a server-less deep-learning API service using Django REST Framework to classify images into 3 buckets (with mask, without mask, improperly worn mask)}
                 \resumeItemClean
-                    {CI/CD pipeline was setup to automatically build the docker container and deploy in Cloud Run}
+                    {CI/CD pipelines was setup to automatically build and deploy docker containers in Cloud Run}
             \resumeItemListEnd
         \projectheading{Gender Classification Using CNN -- Graduate Thesis}{}{}{}
             \resumeItemListStart

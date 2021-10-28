@@ -107,7 +107,7 @@
 %----------HEADING-----------------
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
   \textbf{\href{https://vinaykudari.me/blog/}{\Large Vinay Kudari}} & \href{mailto:vkudari@buffalo.edu}{vkudari@buffalo.edu}\\
-  \href{https://vinaykudari.me}{https://vinaykudari.me} & +1 (469) 943-6778 \\
+  \href{https://vinaykudari.me}{https://vinaykudari.me} & +1-(469)-943-6778 \\
 \end{tabular*}
 
 
@@ -131,10 +131,9 @@
 %-----------SKILLS-----------------
 \section{Skills}
     \resumeSubHeadingListStart
-    \resumeSubItem{Languages}{~~~~~~~~~~~~~~Python, SQL, Bash, Dart, JavaScript}
-    \resumeSubItem{Scientific Libraries}{~~Pandas, NumPy, Matplotlib, Scikit, SQLAlchemy}
+    \resumeSubItem{Languages}{~~~~~~~~~~~~~~Python, SQL, Bash, Dart, JavaScript, Java}
+    \resumeSubItem{Libraries/Frameworks}{~~PyTorch, Django, PySpark, Pandas, NumPy, OpenCV, Matplotlib, Scikit, SQLAlchemy, Flask, Flutter, FastAI}
     \resumeSubItem{Tools}{~~~~~~~~~~~~~~~~~~~~~~Docker, Compose, Kubernetes, PostgreSQL, Redis, Sentry}
-    \resumeSubItem{Frameworks}{~~~~~~~~~~~~Django, Flask, Flutter, PyTorch, PySpark, FastAI, OpenCV}
     \resumeSubItem{Cloud}{~~~~~~~~~~~~~~~~~~~~~GCP, Heroku, AWS}
 \resumeSubHeadingListEnd
 
@@ -145,11 +144,11 @@
         {Full Stack Developer}{Jan. 2020 - Aug. 2021}
             \resumeItemListStart
                 \resumeItemClean
-                    {Re-Built a popular healthcare app into a cross-platform mobile application using Flutter. Involved in features such as setting up BLoC, database and network layers}
+                    {Re-Built a popular healthcare app into a cross-platform mobile application using Flutter. Set up BLoC, database and network layers}
                   \resumeItemClean
                     {Designed \& developed HIPAA compliant scalable push notification service leveraging Cloud Tasks \& Firebase Messaging}
                   \resumeItemClean
-                    {Developed an API on top of the NIH and MPR APIs to retrieve medication data and interactions. Caching was set up to improve the performance}
+                    {Medication info and interactions API was built on top of the NIH and MPR APIs that supports caching}
                   \resumeItemClean
                     {Developed a clinical surveying platform that sends out email and SMS alerts to patients and collects feedback periodically}
                   \resumeItemClean
@@ -157,14 +156,14 @@
                   \resumeItemClean
                     {Kubernetes CI/CD workflows were setup on GitLab to test, build and deploy API's on cloud}
                   \resumeItemClean
-                    {NGINX reverse proxy server with SSL was setup to forward the traffic to services based on custom conditions}
+                    {NGINX reverse proxy server with SSL was setup on Docker to forward the traffic to services based on custom conditions}
               \resumeItemListEnd
     \resumeSubheading
     	{Accenture}{Bangalore, India}
     	{Advanced Application Engineering Analyst}{Sep. 2018 -  Dec. 2019}
     	    \resumeItemListStart
                 \resumeItemClean
-                  {Transformed huge volumes of drug life cycle data and hierarchies of drug materials were generated using PL/SQL procedures on Redshift cluster}
+                  {PL/SQL procedures were used to generate drug material hierarchies from massive amounts of drug life cycle data on a Redshift cluster}
                 \resumeItemClean
                   {Performed trend analysis on drug potency data using PySpark on a EMR cluster to forecast potential raw materials affecting the drug quality. Several statistical measures are performed and colour coded control charts are visualised on a spotfire dashboard}
                 \resumeItemClean
@@ -175,7 +174,7 @@
     	{Software Intern}{May 2017 -  July 2017}
     	    \resumeItemListStart
                 \resumeItemClean
-                  {Created datasets and trained machine learning models to identify cargo type and size of lease area}
+                  {Created datasets and trained machine learning models to identify cargo type and estimated size of lease area using computer vision techniques}
     	    \resumeItemListEnd
     \resumeSubHeadingListEnd
 
@@ -186,28 +185,34 @@
         \projectheading{Maze Solver using Reinforcement Learning}{}{}{}
             \resumeItemListStart
                 \resumeItemClean
-                    {Designed a custom 2D grid world, implemented RL algorithms like Q-Learning, Monte Carlo and Deep Q-Network}
+                    {Designed a custom 2D grid world for Maze, implemented/applied RL algorithms like Q-Learning, Monte Carlo and Deep Q-Network}
             \resumeItemListEnd
-        \projectheading{DeepJet Autonomous Car (work in progress)}{\href{https://github.com/vinaykudari/eureka-bot}{code}}{}
+        \projectheading{Car Dent Detection}{}{}{}
             \resumeItemListStart
                 \resumeItemClean
-                    {Assembled the car with Jetson Nano as its brain. WebSocket was used to exchange data with the controller}
+                    {Performed instance segmentation based on Mask-R-CNN architecture to segment dents; Trained using COCO dataset}
+            \resumeItemListEnd
+        \projectheading{DeepJet Autonomous Car}{\href{https://github.com/vinaykudari/eureka-bot}{code}}{}
+            \resumeItemListStart
                 \resumeItemClean
-                    {Cross-platform mobile app was build to control the car. WebRTC protocol is used to receive real-time camera feed}
+                    {Assembled the car with Jetson Nano; Cross-platform mobile app was build using Flutter to control the bot remotly}
+                \resumeItemClean
+                    {Implemented WebSockets to exchange sensor data with the controller; Working on applying RL/DL algorithms to make it autonomous}
             \resumeItemListEnd
         \projectheading{Mask Detection REST API}{\href{https://github.com/vinaykudari/mask-detection-api}{code}}{}
             \resumeItemListStart
                 \resumeItemClean
                     {Built a server-less deep-learning API service using Django REST Framework to classify images}
             \resumeItemListEnd
-        \projectheading{Gender Classification Using CNN -- Graduate Thesis}{}{}{}
+    \resumeSubHeadingListEnd
+    
+\section{Thesis}
+\resumeSubHeadingListStart
+\projectheading{Gender Classification Using CNN -- Graduate Thesis}{}{}{}
             \resumeItemListStart
                 \resumeItemClean
                     {Implemented Gil Levi and Tal Hassner's deep neural network architecture in PyTorch, tweaked the network layout, and evaluated various second-order optimisation techniques}
-                \resumeItemClean
-                    {Retraining the model with varying dataset resolutions resulted in an 86.3\% accuracy}
             \resumeItemListEnd
-        
-    \resumeSubHeadingListEnd
+  \resumeSubHeadingListEnd
     
 \end{document}

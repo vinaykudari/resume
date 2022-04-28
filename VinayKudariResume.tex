@@ -156,7 +156,7 @@
     	{Computer Vision Intern}{May 2017 -  July 2017}
     	    \resumeItemListStart
                 \resumeItemClean
-                  {Extracted frames from surveillance cameras; merged images based on SIFT features and RANSAC; estimated cargo type and area}
+                  {Extracted frames from surveillance cameras; merged them based on SIFT keypoints and RANSAC; estimated cargo type & area}
     	    \resumeItemListEnd
     \resumeSubHeadingListEnd
 
@@ -168,25 +168,25 @@
                 \resumeItemClean
                     {Implemented inductive matrix completion and LightGCN models; Improved RSME by initializing custom user-item embeddings}
             \resumeItemListEnd
-        \projectheading{Vehicle Health Inspector}{\href{https://finddentsonmycar.tech/}{live}}{}
+        \projectheading{Computer vision based vechicle damage detector}{}{}
             \resumeItemListStart
                 \resumeItemClean
-                    {Trained instance segmentation model using detectron2 to detect damage; assigned health score based on area of bounding box}
+                    {Trained segmentation model using detectron2 to detect damage; assigned health score based on area of bounding box}
             \resumeItemListEnd
         \projectheading{Unordered image stitching and deghosting}{}{}
             \resumeItemListStart
                 \resumeItemClean
-                    {Estimated approx overlap area by minimum variance technique on binarized images; stitched images based on binary tree model}
-            \resumeItemListEnd
-        \projectheading{HuggingFace Datasets | Open Source }{}{}
-            \resumeItemListStart
-                \resumeItemClean
-                    {Contributed neural-code-search, peer-read and couple other datasets to HuggingFace repository}
+                    {Estimated approx overlap area by minimum variance technique on binarized images; stitched images based on binary tree model; removed deghosting from the overlap areas by selecting regions based on minimum local gradients}
             \resumeItemListEnd
         \projectheading{Information extraction as seq2seq task}{}{}
             \resumeItemListStart
                 \resumeItemClean
                     {Transformed labelled structured data into text based on TaggedSpans like format and applied T5 model to generate text and extracted entities using REGEX}
+            \resumeItemListEnd
+        \projectheading{Microservice based deeplearning inference pipeline}{}{}
+            \resumeItemListStart
+                \resumeItemClean
+                    {Exposed ResNet model in a docker container; setup automated CI\CD pipeline to build and deploy as serverless REST API}
             \resumeItemListEnd
     \resumeSubHeadingListEnd
     

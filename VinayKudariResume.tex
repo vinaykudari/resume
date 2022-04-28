@@ -110,6 +110,16 @@
   \href{https://vinaykudari.me}{https://vinaykudari.me} & +1-(469)-943-6778 \\
 \end{tabular*}
 
+%-----------SKILLS-----------------
+\section{Skills}
+    \resumeSubHeadingListStart
+    \resumeSubItem{Languages}{Python, SQL, Bash, Dart, JavaScript, Java, HTML, CSS}
+    \resumeSubItem{Web}{Django, Flask, Flutter, SQLAlchemy, Pytest
+    \resumeSubItem{ML}{~~PyTorch, PySpark, Pandas, NumPy, OpenCV, Matplotlib, Scikit, FastAI}
+    \resumeSubItem{Tools}{~~~~~~~Docker, Compose, Kubernetes, Redis, Celery, Git, JIRA}
+    \resumeSubItem{Cloud}{~~~~~~GCP, Heroku, AWS}
+\resumeSubHeadingListEnd
+
 %-----------EXPERIENCE-----------------
 \section{Experience}
     \resumeSubHeadingListStart
@@ -135,56 +145,48 @@
     	{Big Data Developer}{Sep. 2018 -  Dec. 2019}
     	    \resumeItemListStart
                 \resumeItemClean
-                  {PL/SQL procedures were developed to generate parent child hierarchies using temporal drug life cycle data}
-                \resumeItemClean
                   {Time series analysis was conducted on drug assay data to identify raw materials that effects the drug quality}
                 \resumeItemClean
                   {Designed parallel ETL data validation pipelines using microservice architecture; Manual testing resources were cut by 70\%}
+                \resumeItemClean
+                  {PL/SQL procedures were developed to generate parent child hierarchies using temporal drug life cycle data}
     	    \resumeItemListEnd
     \resumeSubheading
     	{Vishakapatnam Port Trust}{Visakhapatnam, India}
     	{Computer Vision Intern}{May 2017 -  July 2017}
     	    \resumeItemListStart
                 \resumeItemClean
-                  {Created datasets and trained a support vector machine with a Gaussian kernel to detect cargo class, estimate lease area size, and monitor for suspicious movement using the block matching algorithm}
+                  {Extracted frames from surveillance cameras; merged images based on SIFT features and RANSAC; estimated cargo type and area}
     	    \resumeItemListEnd
     \resumeSubHeadingListEnd
-
-%-----------SKILLS-----------------
-\section{Skills}
-    \resumeSubHeadingListStart
-    \resumeSubItem{Languages}{Python, SQL, Bash, Dart, JavaScript, Java, HTML, CSS}
-    \resumeSubItem{Libraries}{~~PyTorch, Django, PySpark, Pandas, NumPy, OpenCV, Matplotlib, Scikit, SQLAlchemy, Flask, Flutter, FastAI}
-    \resumeSubItem{Tools}{~~~~~~~Docker, Compose, Kubernetes, PostgreSQL, Redis, Sentry, Git, JIRA}
-    \resumeSubItem{Cloud}{~~~~~~GCP, Heroku, AWS}
-\resumeSubHeadingListEnd
 
 %-----------PROJECTS-----------------
 \section{Relevant Projects}
     \resumeSubHeadingListStart
-        \projectheading{Smart Broker | Deep/Reinforcement Learning, Computer Vision, Time Series Analysis}{}{}
+        \projectheading{Recommender system using graph neural networks}{}{}
             \resumeItemListStart
                 \resumeItemClean
-                    {Designed OpenAI gym environment for crypto time series data, trained on visual technical indicators like RSI, MACD}
-                \resumeItemClean
-                    {Applied LSTM chained with CNN as function approximators to Actor Critic algorithms; \~10\% returns were achieved}
+                    {Implemented inductive matrix completion and LightGCN models; Improved RSME by initializing custom user-item embeddings}
             \resumeItemListEnd
-        \projectheading{Vehicle Health Inspector API | Computer Vision, Deep Learning}{\href{https://finddentsonmycar.tech/}{link}}{}
+        \projectheading{Vehicle Health Inspector}{\href{https://finddentsonmycar.tech/}{live}}{}
             \resumeItemListStart
                 \resumeItemClean
-                    {Trained segmentation model to detect damage and calculate health score; Deployed model as a REST API on GCP}
+                    {Trained instance segmentation model using detectron2 to detect damage; assigned health score based on area of bounding box}
             \resumeItemListEnd
-        \projectheading{DeepJet Autonomous Car | Deep/Reinforcement Learning, App Dev, Backend}{\href{https://github.com/vinaykudari/eureka-bot}{link}}{}
+        \projectheading{Unordered image stitching and deghosting}{}{}
             \resumeItemListStart
                 \resumeItemClean
-                    {Assembled the car with Jetson Nano; Cross-platform mobile app was build using Flutter to control the bot remotely}
-                \resumeItemClean
-                    {Implemented WebSockets to exchange sensor data with the controller; Applying RL/DL algorithms to make it autonomous}
+                    {Estimated approx overlap area by minimum variance technique on binarized images; stitched images based on binary tree model}
             \resumeItemListEnd
-        \projectheading{HuggingFace Datasets | NLP }{\href{}{}}{}
+        \projectheading{HuggingFace Datasets | Open Source }{}{}
             \resumeItemListStart
                 \resumeItemClean
-                    {Contributed couple of datasets to HuggingFace repository, was a core contributed during the open source sprint}
+                    {Contributed neural-code-search, peer-read and couple other datasets to HuggingFace repository}
+            \resumeItemListEnd
+        \projectheading{Information extraction as seq2seq task}{}{}
+            \resumeItemListStart
+                \resumeItemClean
+                    {Transformed labelled structured data into text based on TaggedSpans like format and applied T5 model to generate text and extracted entities using REGEX}
             \resumeItemListEnd
     \resumeSubHeadingListEnd
     

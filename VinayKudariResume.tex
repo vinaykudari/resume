@@ -156,7 +156,7 @@
     	{Computer Vision Intern}{May 2017 -  July 2017}
     	    \resumeItemListStart
                 \resumeItemClean
-                  {Extracted frames from surveillance cameras; merged them based on SIFT keypoints and RANSAC; estimated cargo type \& area}
+                  {Extracted frames from surveillance cameras; merged them based on SIFT keypoints and RANSAC; trained a support vector machine with a gaussian kernel to detect cargo class and estimate lease area; developed a motion detector model to identify suspicious movements}
     	    \resumeItemListEnd
     \resumeSubHeadingListEnd
 
@@ -166,12 +166,12 @@
         \projectheading{Recommender system using graph neural networks}{}{}
             \resumeItemListStart
                 \resumeItemClean
-                    {Implemented inductive matrix completion and LightGCN models; Improved RSME by initializing custom user-item embeddings}
+                    {Developed a inductive matrix completion model using user-item node embeddings pretrained on movie reviews; 1-hop subgraphs around user, item pairs are generated and passed to MLP regressor to forecast ratings}
             \resumeItemListEnd
         \projectheading{Computer vision based vechicle damage detector}{}{}
             \resumeItemListStart
                 \resumeItemClean
-                    {Trained segmentation model using detectron2 to detect damage; assigned health score based on area of bounding box}
+                    {Trained instance segmentation model using detectron2 to detect damages; assigned a health score based on relative damage}
             \resumeItemListEnd
         \projectheading{Unordered image stitching and deghosting}{}{}
             \resumeItemListStart
@@ -181,12 +181,17 @@
         \projectheading{Information extraction as seq2seq task}{}{}
             \resumeItemListStart
                 \resumeItemClean
-                    {Transformed labelled structured data into text based on TaggedSpans like format and applied T5 model to generate text and extracted entities using REGEX}
+                    {Transformed labelled structured data into text; finetuned T5 model to generate text and extracted entities using REGEX}
             \resumeItemListEnd
         \projectheading{Microservice based deeplearning inference pipeline}{}{}
             \resumeItemListStart
                 \resumeItemClean
                     {Exposed ResNet model in a docker container; setup automated CI/CD pipeline to build and deploy as serverless REST API}
+            \resumeItemListEnd
+        \projectheading{Reinforcement learning based crypto trading}{}{}
+            \resumeItemListStart
+                \resumeItemClean
+                    {Designed custom OpenAI gym for crypto time series data; LSTM with CNN was used as function approximators to actor critic algos}
             \resumeItemListEnd
     \resumeSubHeadingListEnd
     

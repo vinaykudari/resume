@@ -109,7 +109,7 @@
     \resumeSubHeadingListEnd
 	    
 \vspace{-8pt}
-\section{relavant skills}
+\section{relevant skills}
 	{Python, SQL, JAVA, Django, Flask, PyTorch, PySpark, Docker, K8s, Git, NumPy, OpenCV, Pandas, GCP, AWS} 
 \vspace{-2pt}
 \section{experience [3.4 yrs]}
@@ -118,20 +118,20 @@
     {Software Development Intern  \(|\) \textbf{java, spring, kafka, grafana, grpc, no-sql, cassandre}}{May 2022 - Present}
     \resumeItemListStart
         \resumeItemClean
-          {Working on a service which publishes hints to the online PS5 users dynamically based on the game context}
+          {Working on a publisher service which publishes hints to the online PS5 users dynamically based on the game context}
         \resumeItemClean
-          {Porting monolith news publisher service into a async service using gRPC based custom built framework}
+          {Porting monolith news publisher service into micro services using gRPC based custom built framework}
         \resumeItemClean
           {Building grafana analytical dashboards to visualize service performance charts derived from over 100M active users}
         \resumeItemListEnd
         
     \resumeSubheading{Brave Orbit [1.6 yrs]}{(Remote) Capetown, South Africa}
-    {Full Stack Developer \(|\) \textbf{python, django, flutter, pytest, redis, async, gcp, k8s}}{Jan 2020 - Aug 2021}
+    {Full Stack Developer \(|\) \textbf{python, django, flutter, pytest, redis, celery, gcp, k8s}}{Jan 2020 - Aug 2021}
     \resumeItemListStart
         \resumeItemClean
             {Developed a cross-platform app using BLoC pattern, implemented database, network and state management layers}
           \resumeItemClean
-            {Designed HIPAA compliant scalable async push notification service for medication reminder application}
+            {Engineered HIPAA compliant scalable async push notification service for medication reminder application}
           \resumeItemClean
             {Developed a task scheduler for clinical surveys that delivers email, SMS alerts and gathers response on a recurring basis}
           \resumeItemClean
@@ -143,18 +143,18 @@
     \resumeItemListEnd
       
     \resumeSubheading{Accenture [1.3 yrs]}{Bangalore, India}
-    {Big Data Developer \(|\) \textbf{python, redshift, pyspark, pandas, aws, scikit-learn}}{Sep 2018 - Dec 2019}
+    {Big Data Developer \(|\) \textbf{python, redshift, pyspark, pandas, aws}}{Sep 2018 - Dec 2019}
     \resumeItemListStart
         \resumeItemClean
           {Time series analysis was conducted on drug assay data to identify raw materials that effect the drug quality}
         \resumeItemClean
-          {Designed ETL data validation pipeline using microservice architecture; Manual testing resources were cut by 70\%}
+          {Designed ETL data validation pipeline using micro service architecture; Manual testing resources were cut by 70\%}
         \resumeItemClean
           {PL/SQL procedures were developed to generate parent child hierarchies using temporal drug life cycle data}
         \resumeItemListEnd
         
     \resumeSubheading{Visakhapatnam Port Trust [3 mon]}{Visakhapatnam, India}
-    {Computer Vision Intern \(|\) \textbf{opencv, computer vision}}{May 2017 - July 2017}
+    {Computer Vision Intern \(|\) \textbf{opencv, video processing, scikit-learn}}{May 2017 - July 2017}
     \resumeItemListStart
         \resumeItemClean
           {Extracted frames from surveillance cameras; merged them based on SIFT keypoints and RANSAC; trained a SVM to detect cargo type and estimate lease area; developed a motion detector model to identify suspicious movements}
@@ -166,17 +166,19 @@
 \vspace{-5pt}
 \section{selected projects}
 \resumeSubHeadingListStart
-\resumeSubItem{Recommender system using graph neural networks \(|\) gnn, deep-learning}{Developed an inductive matrix completion model using user-item node embeddings pretrained on movie reviews; 1-hop subgraphs around user, item pairs are generated and passed to MLP regressor to forecast ratings}
+\resumeSubItem{Recommender system using graph neural networks \(|\) gnn, deep-learning}{Developed an inductive matrix completion model using user-item node embeddings pretrained on movie reviews; 1-hop sub graphs around user, item pairs are generated and passed to MLP regressor to forecast ratings}
 \vspace{2pt}
-\resumeSubItem{Computer vision based vehicle damage detector \(|\) rest api, django, pytorch}{Trained an instance segmentation model using detectron2 to detect damages; assigned a health score based on relative area of damage}
+\resumeSubItem{Computer vision based vehicle damage detector \(|\) backend, rest-api, django, pytorch}{Trained an instance segmentation model using detectron2 to detect damages; assigned a health score based on relative area of damage}
 \vspace{2pt}
-\resumeSubItem{Unordered image stitching and deghosting \(|\) image processing/matching, data structures}{Estimated approximate overlap area by minimum variance technique on binarized images; stitched images based on binary tree model; removed deghosting from the overlap areas by selecting regions based on minimum local gradients}
+\resumeSubItem{Unordered image stitching and deghosting \(|\) image matching, data structures}{Estimated approximate overlap area by minimum variance technique on binarized images; stitched images based on binary tree model; removed deghosting from the overlap areas by selecting regions based on minimum local gradients}
 \vspace{2pt}
 \resumeSubItem{Information extraction as seq2seq task \(|\) transformer, text2text}{Transformed labelled structured data into text; finetuned T5 model to generate text and extracted entities using REGEX}
 \vspace{2pt}
-\resumeSubItem{Microservice based deeplearning inference pipeline \(|\) docker, cloud-run, automation}{Exposed ResNet model in a docker container; setup automated CI/CD pipeline to build and deploy as serverless REST API}
+\resumeSubItem{Microservice based deeplearning inference pipeline \(|\) docker, cloud-run, automation}{Created face mask dataset and trained a multiclass classification network; Exposed ResNet model in a docker container; setup automated CI/CD pipeline to build and deploy as serverless REST API}
 \vspace{2pt}
-\resumeSubItem{Reinforcement learning based crypto trading bot \(|\) time series, rl}{Designed OpenAI gym for time series data; LSTM with CNN was used as function approximator to actor critic algorithms}
+\resumeSubItem{Reinforcement learning based crypto trading bot \(|\) time series, rl}{Designed a continuous action space OpenAI gym environment to handle trading data; LSTM with CNN was used as function approximator to actor critic algorithms}
+\vspace{2pt}
+\resumeSubItem{Custom built autonomous car \(|\) full-stack, mobile-app, vision, webrtc}{Assembled the car with Jetson Nano; Cross-platform mobile app was build to control the bot; Implemented WebSockets to exchange sensor data and WebRTC protocol to stream video to the controller; Applying RL/DL algorithms to make it autonomous}
 \resumeSubHeadingListEnd
 \vspace{-5pt}
 \section{Publications}

@@ -91,12 +91,55 @@
 \end{tabular*}
 
 \vspace{5pt}
-\textbf{Profile:} Masters student with 3.5 yrs of software dev experience and a passion for innovating technical solutions 
+\textbf{Profile:} Masters student with 3.5 yrs of software dev experience and a passion for developing ML solutions
 \vspace{0pt}
 
 \section{Relevant skills}
-	{Python, SQL, JAVA, Django, Flask, PyTorch, PySpark, Docker, Kubernetes, Git, Redis, Pandas, Kafka, GCP, AWS} 
+	{Python, SQL, PyTorch, PySpark, OpenCV, NumPy, Pandas, Django, Docker, Kubernetes, Git, Redis, Kafka, GCP, AWS} 
 \vspace{-2pt}
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University at Buffalo [3.95/4.0 GPA] }{Buffalo, NY}
+      {Master of Science in Computer Science (AI/ML Specialization)}{Sep 2021 - Present}
+      {\scriptsize \textit{ \footnotesize{\newline{}\textbf{Courses:} Data Structure \& Algorithms, Computer Vision, NLP, Deep Learning, Big Data Systems, Reinforcement Learning}}}
+      {\scriptsize \textit{ \footnotesize{\newline{}\textbf{Research:} Working at A2IL lab on projects related to NLP and Computer Vision, advised by Prof. David Doermann}}}
+    \resumeSubHeadingListEnd
+    
+    \resumeSubHeadingListStart
+    \resumeSubheading
+      {National Institute of Technology, Durgapur [3.3/4.0 GPA]}{West Bengal, India}
+      {Bachelor of Technology in Computer Science and Engineering}{July 2014 - May 2018}
+      {\scriptsize \textit{ \footnotesize{\newline{}\textbf{Courses:} Operating Systems, Computer Architecture, Networking, Database Management Systems, Compilers, Digital Image Processing}}}
+      {\scriptsize \textit{ \footnotesize{\newline{}\textbf{Thesis:} Gender Classification using CNN advised by Dr. Dakshina Ranjan Kisku}}}
+    \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------------
+\vspace{-5pt}
+
+\section{Projects}
+\resumeSubHeadingListStart
+\resumeSubItem{Recommender system using graph neural networks (gnn, deep-learning)}{Developed an inductive matrix completion model using user-item node embeddings pretrained on movie reviews; 1-hop sub graphs are used to forecast ratings}
+\vspace{2pt}
+\resumeSubItem{Computer vision based vehicle damage detector api (vision, rest-api, django, pytorch)}{Trained an instance segmentation model to detect damages; assigned a health score based on relative area of damage and deployed as an api}
+\vspace{2pt}
+\resumeSubItem{Unordered image stitching and deghosting (vision, image matching)}{Estimated approximate overlap area by minimum variance technique on binarized images; stitched images based on binary tree model; removed deghosting from the overlap areas by selecting regions based on minimum local gradients}
+\vspace{2pt}
+\resumeSubItem{Open-source contributions (nlp, open-source)}{Core contributor to HuggingFace Datasets official repository}
+\vspace{2pt}
+\resumeSubItem{Information extraction as seq2seq task (nlp, transformer, text2text)}{Transformed labelled structured data into text; finetuned T5 model to generate text and extracted entities using REGEX}
+\vspace{2pt}
+\resumeSubItem{Abstractive text summarization of tabular data (nlp, transformer)}{Flattened tables into sequence of words, preserved structure using key:value format; Explored various text2text models to generate summary of news articles}
+\vspace{2pt}
+\resumeSubItem{Deep learning based serverless rest api (serverless, rest-api, cloud-run, ci/cd)}{Created synthetic face mask dataset and developed automated pipeline to build, test and deploy trained model in a docker container to google cloud run}
+\vspace{2pt}
+\resumeSubItem{Reinforcement learning based crypto trading bot (time-series)}{Designed a continuous action space OpenAI gym environment to handle trading data; LSTM with CNN was used as function approximator to actor critic algorithms}
+\vspace{2pt}
+\resumeSubItem{Custom car controller app (full-stack, mobile-app, fastapi, webrtc)}{Assembled the car with Jetson Nano; Cross-platform mobile app and controller service was developed to control the bot over network}
+\resumeSubHeadingListEnd
+\vspace{-5pt}
 
 \section{Experience}
   \resumeSubHeadingListStart
@@ -147,48 +190,6 @@
         \resumeItemListEnd
 
 \resumeSubHeadingListEnd
-
-%-----------PROJECTS-----------------
-\vspace{-5pt}
-\section{Projects}
-\resumeSubHeadingListStart
-\resumeSubItem{Recommender system using graph neural networks (gnn, deep-learning)}{Developed an inductive matrix completion model using user-item node embeddings pretrained on movie reviews; 1-hop sub graphs are used to forecast ratings}
-\vspace{2pt}
-\resumeSubItem{Computer vision based vehicle damage detector api (vision, rest-api, django, pytorch)}{Trained an instance segmentation model to detect damages; assigned a health score based on relative area of damage and deployed as an api}
-\vspace{2pt}
-\resumeSubItem{Unordered image stitching and deghosting (vision, image matching)}{Estimated approximate overlap area by minimum variance technique on binarized images; stitched images based on binary tree model; removed deghosting from the overlap areas by selecting regions based on minimum local gradients}
-\vspace{2pt}
-\resumeSubItem{Open-source contributions (nlp, open-source)}{Core contributor to HuggingFace Datasets official repository}
-\vspace{2pt}
-\resumeSubItem{Information extraction as seq2seq task (nlp, transformer, text2text)}{Transformed labelled structured data into text; finetuned T5 model to generate text and extracted entities using REGEX}
-\vspace{2pt}
-\resumeSubItem{Abstractive text summarization of tabular data (nlp, transformer)}{Flattened tables into sequence of words, preserved structure using key:value format; Explored various text2text models to generate summary of news articles}
-\vspace{2pt}
-\resumeSubItem{Deep learning based serverless rest api (serverless, rest-api, cloud-run, ci/cd)}{Created synthetic face mask dataset and developed automated pipeline to build, test and deploy trained model in a docker container to google cloud run}
-\vspace{2pt}
-\resumeSubItem{Reinforcement learning based crypto trading bot (time-series)}{Designed a continuous action space OpenAI gym environment to handle trading data; LSTM with CNN was used as function approximator to actor critic algorithms}
-\vspace{2pt}
-\resumeSubItem{Custom car controller app (full-stack, mobile-app, fastapi, webrtc)}{Assembled the car with Jetson Nano; Cross-platform mobile app and controller service was developed to control the bot over network}
-\resumeSubHeadingListEnd
-\vspace{-5pt}
-
-%-----------EDUCATION-----------------
-\section{Education}
-  \resumeSubHeadingListStart
-    \resumeSubheading
-      {University at Buffalo [3.95/4.0 GPA] }{Buffalo, NY}
-      {Master of Science in Computer Science (AI/ML Specialization)}{Sep 2021 - Present}
-      {\scriptsize \textit{ \footnotesize{\newline{}\textbf{Courses:} Data Structure \& Algorithms, Computer Vision, NLP, Deep Learning, Big Data Systems, Reinforcement Learning}}}
-      {\scriptsize \textit{ \footnotesize{\newline{}\textbf{Research:} Working at A2IL lab on projects related to NLP and Computer Vision, advised by Prof. David Doermann}}}
-    \resumeSubHeadingListEnd
-    
-    \resumeSubHeadingListStart
-    \resumeSubheading
-      {National Institute of Technology, Durgapur [3.3/4.0 GPA]}{West Bengal, India}
-      {Bachelor of Technology in Computer Science and Engineering}{July 2014 - May 2018}
-      {\scriptsize \textit{ \footnotesize{\newline{}\textbf{Courses:} Operating Systems, Computer Architecture, Networking, Database Management Systems, Compilers, Digital Image Processing}}}
-      {\scriptsize \textit{ \footnotesize{\newline{}\textbf{Thesis:} Gender Classification using CNN advised by Dr. Dakshina Ranjan Kisku}}}
-    \resumeSubHeadingListEnd
 	    
 \vspace{-8pt}
 \section{Publications}

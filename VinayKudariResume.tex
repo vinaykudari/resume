@@ -86,34 +86,54 @@
 
 %----------HEADING-----------------
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-  \textbf{{\LARGE Vinay Kudari}} & \href{mailto:}{vkudari@buffalo.edu}\\
-  \href{https://vinaykudari.me}{https://vinaykudari.me} & +1-469-943-6778
+  \textbf{{\LARGE Vinay Kudari}} & \href{mailto:}{jobs.vinaykudari@gmail.com}\\
+  \href & +1-469-943-6778
 \end{tabular*}
 
-\vspace{5pt}
-\textbf{Profile:} Masters student who has been developing software systems for over 5 years and professionally for 3.5 years. Vinay has experience leading projects with vague requirements and known for writing clean maintainable code.
 \vspace{0pt}
 
 \section{Relevant skills}
-	{\textbf{Python, Go, JAVA, SQL}, \textit{Django, Flask, PyTorch, PySpark, Docker, Kubernetes, Git, Redis, Kafka}, \textbf{GCP, AWS}}
+	{\textbf{Python, JAVA, SQL}, \textit{Django, Spring Boot, PySpark, Docker, Kubernetes, Git, Redis, Kafka, Jenkins}, \textbf{GCP, AWS}}
 \vspace{-2pt}
 
 \section{Experience}
   \resumeSubHeadingListStart
-  \resumeSubheading{Playstation (Sony)}{San Francisco, CA}
+  \resumeSubheading{Gap Inc}{San Francisco, CA}
+    {Sr. Software Engineer  \(|\) \textbf{java, spring boot, graphql, langchain, llm, k8s, chatbot}}{July 2023 - Present}
+    \resumeItemListStart
+        \resumeItemClean
+          {Engineering a low-latency LLM-based information retrieval system to extract data from a heterogeneous, multi-source large document corpus}
+        \resumeItemClean
+          {Leading the development of a GraphQL based data access layer to retrieve terabyte scale data from a data lake}
+       \resumeItemListEnd
+        
+  \resumeSubheading{Amazon Web Services}{Palo Alto, CA}
+    {Software Development Engineer  \(|\) \textbf{cdk, dynamo, glue, lambda, sqs, vpc, serverless}}{Dec 2022 - June 2023}
+    \resumeItemListStart
+        \resumeItemClean
+          {Designed and published an internal query builder python package (ZenQL) tailored for AWS Healthlake}
+        \resumeItemClean
+          {Designed an event-driven server-less system using AWS services, allowing for parallel execution of tasks, resulting in seamless scaling to handle concurrent requests and improved processing throughput}
+        \resumeItemClean
+        {Designed and optimized complex SQL queries in Athena resulting in a 40\% reduction in query execution times}
+        \resumeItemClean
+        {Architected near real time data processing system using AWS CDK, leveraging PySpark for ETL transforms on multi-terabyte healthcare data sets}
+        \resumeItemListEnd
+        
+  \resumeSubheading{Playstation}{San Francisco, CA}
     {Software Development Intern  \(|\) \textbf{java, kafka, concurrency, async, no-sql, cassandra}}{May 2022 - Dec 2022}
     \resumeItemListStart
         \resumeItemClean
         {Worked on auto follow feature for PS5 Explore Hub. Message queues and REST endpoints were developed}
         \resumeItemClean
-          {Learned custom framework and leveraged asynchronous programming pattern to optimise the latency for 1M QPS traffic}
+          {Learned custom framework and leveraged asynchronous programming pattern to optimise the latency by 60\%}
         \resumeItemClean
           {Developed a cross platform CLI tool to automate generation of grafana analytical dashboards from logs}
 	\resumeItemClean
 	{Integrated Hibernate into LEGO framework; Transformed and optimised raw SQL to HQL queries}
         \resumeItemListEnd
         
-    \resumeSubheading{Brave Orbit}{(Remote) Capetown, South Africa}
+    \resumeSubheading{Brave Orbit}{Capetown, South Africa}
     {Full Stack Developer \(|\) \textbf{rest-api, django, mobile-app, pytest, redis, gcp, k8s}}{Jan 2020 - Aug 2021}
     \resumeItemListStart
         \resumeItemClean
@@ -140,13 +160,6 @@
         \resumeItemClean
           {Developed PL/SQL procedures to generate parent child hierarchies using temporal drug life cycle data}
         \resumeItemListEnd
-        
-    \resumeSubheading{Visakhapatnam Port Trust}{Visakhapatnam, India}
-    {Computer Vision Intern \(|\) \textbf{opencv, scikit-learn, numpy, video processing}}{May 2017 - July 2017}
-    \resumeItemListStart
-        \resumeItemClean
-          {Extracted frames from surveillance cameras; merged them based on SIFT keypoints and RANSAC; trained a SVM to detect cargo type and estimate lease area; developed a motion detector model to identify suspicious movements}
-        \resumeItemListEnd
 
 \resumeSubHeadingListEnd
 
@@ -154,19 +167,17 @@
 \vspace{-5pt}
 \section{Projects}
 \resumeSubHeadingListStart
-\resumeSubItem{Full text search engine (search, information-retrieval)}{Developed a query parser to transform search query into boolean expression; Optimised the text retrieval by creating inverted index and performed batch processing.}
-\vspace{2pt}
-\resumeSubItem{Recommender system using graph neural networks (gnn, deep-learning)}{Developed an inductive matrix completion model using user-item node embeddings pretrained on movie reviews; 1-hop sub graphs are used to forecast ratings}
-\vspace{2pt}
-\resumeSubItem{Computer vision based vehicle damage detector api (vision, rest-api, django, pytorch)}{Trained an instance segmentation model to detect damages; assigned a health score based on relative area of damage and deployed as an api}
-\vspace{2pt}
-\resumeSubItem{Unordered image stitching and deghosting (vision, image matching)}{Estimated approximate overlap area by minimum variance technique on binarized images; stitched images based on binary tree model; removed deghosting from the overlap areas by selecting regions based on minimum local gradients}
-\vspace{2pt}
 \resumeSubItem{Open-source contributions (nlp, open-source)}{Core contributor to HuggingFace Datasets official repository}
 \vspace{2pt}
-\resumeSubItem{Information extraction as seq2seq task (nlp, transformer, text2text)}{Transformed labelled structured data into text; finetuned T5 model to generate text and extracted entities using REGEX}
+
+\resumeSubItem{Distributed key-value store (distributed systems)}{Developed redis-like distributed key-value store with a focus on achieving strong consistency and fault tolerance using the RAFT consensus algorithm}
 \vspace{2pt}
-\resumeSubItem{Abstractive text summarization of tabular data (nlp, transformer)}{Flattened tables into sequence of words, preserved structure using key:value format; Explored various text2text models to generate summary of news articles}
+
+\resumeSubItem{Full text search engine (search, information-retrieval)}{Developed a query parser to transform search query into boolean expression; Optimised the text retrieval by creating inverted index and performed batch processing.}
+\vspace{2pt}
+
+\resumeSubItem{Unordered image stitching and deghosting (vision, image matching)}{Estimated approximate overlap area by minimum variance technique on binarized images; stitched images based on binary tree model; removed deghosting from the overlap areas by selecting regions based on minimum local gradients}
+
 \vspace{2pt}
 \resumeSubItem{Deep learning based serverless rest api (serverless, rest-api, cloud-run, ci/cd)}{Created synthetic face mask dataset and developed automated pipeline to build, test and deploy trained model in a docker container to google cloud run}
 \resumeSubHeadingListEnd

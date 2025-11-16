@@ -94,22 +94,22 @@
 \vspace{0pt}
 
 \section{Relevant skills}
-	{\textbf{Python, SQL}, \textit{FastAPI, LangGraph, PySpark, PyTorch, Hugging Face, Kubernetes, Kafka, Terraform}, \textbf{GCP, AWS}}
+	{\textbf{Python, SQL}, \textit{FastAPI, LangGraph, PySpark, PyTorch, Hugging Face, Kubernetes, Redis, Snowflake}, \textbf{GCP, AWS}}
 \vspace{-2pt}
 
 \section{Experience [6+ yrs]}
   \resumeSubHeadingListStart
     \resumeSubheading{Apple}{Cupertino, CA}
-    {Machine Learning Engineer  \(|\) \textbf{automation, mcp, tool-calling, agents}}{July 2024 - Present}
+    {Machine Learning Engineer  \(|\) \textbf{workflow-automation, mcp, k8s, agents, fine-tuning}}{July 2024 - Present}
     \resumeItemListStart
         \resumeItemClean
-        {Architected an MCP (model context protocol) enabled asynchronous task processor that securely executes agent driven jobs in isolated, ephemeral Kubernetes pods at scale}
+        {Architected a MCP enabled asynchronous task processor that executes agent driven jobs in isolated k8s pods}
         \resumeItemClean
-         {Implemented a multi-agent natural language query planner (intent parsing → schema mapping → rewrite/optimize) generating low-latency, resource-efficient SQL}
+         {Developed a multi-model NL→SQL pipeline where an FSDP-fine-tuned, domain-specific LLM rewrites user questions into org-aware, context-augmented queries, which a frontier LLM then compiles into precise, resource-efficient SQL}
         \resumeItemClean
-         {Automated end-to-end document review and database validation via a multi-agent system, replacing manual “read–query–verify–sign” workflows and cutting review labor substantially}
+         {Delivered a policy-aware invoice intelligence system where LLM agents parse receipts from flat files, enrich them with org-specific policy data from Snowflake, and perform automatic validations, automating “read–query–verify–sign” workflows for 10K+ monthly invoices}
         \resumeItemClean
-          {Engineering an agentic system that correlates transactional flows across SAP modules, detects volumetric outliers, enriches root-cause context, and files tickets}
+          {Designed a deep-research finance analyst agent that retrieves, reasons over, and visualizes data from databases and flat files to generate accurate, evidence-backed financial insights}
        \resumeItemListEnd
        
   \resumeSubheading{Gap Inc}{San Francisco, CA}
@@ -175,7 +175,9 @@
 \vspace{-5pt}
 \section{Projects}
 \resumeSubHeadingListStart
-\resumeSubItem{\href{https://t.me/mydawg_bot}{Friend} (say hi @mydawg\_bot on telegram)}{Building a multi-agent AI companion with human-like memory simulation, capable of personalized conversations, context-aware recall, and tool use}
+\resumeSubItem{\href{http://pixieshop.vercel.app/}{Pixie}}{Built in 6 hours at the Nano Banana Hackathon; enables selective edits on live website screenshots or mockups using natural language or voice, with multi-model generation and real-time canvas updates}
+
+\resumeSubItem{\href{https://t.me/mydawg_bot}{Friend} (@mydawg\_bot on telegram)}{Building a multi-agent AI companion with human-like memory simulation, capable of personalized conversations, context-aware recall, and tool use}
 \vspace{2pt}
 
 \resumeSubItem{\href{https://github.com/vinaykudari/stocklerts}{Stocklerts}}{Built a self-evolving system that analyzes real-time news to recommend stocks for day trading; adapts prompts weekly based on ground-truth top performers to refine future predictions}
@@ -183,11 +185,6 @@
 
 \resumeSubItem{Open-source contributions}{Contributor to HuggingFace Datasets official repository}
 \vspace{2pt}
-
-\resumeSubItem{Distributed key-value store}{Developed redis-like distributed key-value store with a focus on achieving strong consistency and fault tolerance using the RAFT consensus algorithm}
-\vspace{2pt}
-
-\resumeSubItem{Unordered image stitching and deghosting}{Estimated approximate overlap area by minimum variance technique on binarized images; stitched images based on binary tree model; removed deghosting from the overlap areas by selecting regions based on minimum local gradients}
 \resumeSubHeadingListEnd
 \vspace{-5pt}
 

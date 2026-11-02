@@ -5,16 +5,15 @@
 % License : MIT
 %------------------------
 
-\documentclass[a4paper,20pt]{article}
+\documentclass[a4paper,10pt]{article}
 
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
 \usepackage{titlesec}
-\usepackage{marvosym}
 \usepackage[usenames,dvipsnames]{color}
 \usepackage{verbatim}
 \usepackage{enumitem}
-\usepackage[pdftex]{hyperref}
+\usepackage[hidelinks]{hyperref}
 \usepackage{fancyhdr}
 
 \pagestyle{fancy}
@@ -87,71 +86,59 @@
 %----------HEADING-----------------
 \begin{tabular*}{\textwidth}{@{}l@{\extracolsep{\fill}}r@{}}
   \textbf{{\LARGE Vinay Kudari}} & \href{mailto:vinay.kudari30@gmail.com}{vinay.kudari30@gmail.com} \\
-  \textit{Interested in systems that shape user behavior at scale} & +1-469-943-6778 \\
+  \textit{Applied research on agentic systems, evaluation, and self-improvement} & +1-469-943-6778 \\
 \end{tabular*}
 
 
 \vspace{0pt}
 
-\section{Relevant skills}
- \begin{itemize}[leftmargin=0.15in, label={}]
-    \small{\item{
-     \textbf{Languages}{: Python, C++, SQL} \\
-     \textbf{ML \& Deep Learning}{: PyTorch, JAX, Hugging Face, PySpark} \\
-     \textbf{GenAI \& Agents}{: LangGraph, vLLM, QLoRA, RAG} \\
-     \textbf{Ranking \& Search}{: ANN, Embeddings, Contrastive learning} \\
-     \textbf{Infra \& Backend}{: Kubernetes, FastAPI, Redis, Snowflake, GCP, AWS}
-    }}
- \end{itemize}
-
 \section{Experience}
   \resumeSubHeadingListStart
-    \resumeSubheading{Apple}{Cupertino, CA}
-    {Software Engineer  \(|\) \textbf{fine-tuning, inference, agents}}{July 2024 - Present}
+    \resumeSubheading{Google}{San Francisco, CA}
+    {Software Engineer, Agentic AI}{July 2026 - Present}
     \resumeItemListStart
         \resumeItemClean
-         {Engineered an enterprise NL-to-SQL pipeline over 10K+ warehouse tables; fine-tuned a 7B planner (Qwen2.5) via FSDP on 100K+ samples, utilizing RAG with negative rejection to ground JSON query plans}
+          {Conduct applied research on agent behavior modeling and trajectory-level analysis; characterize recurring failure modes and inefficiencies to inform hypotheses for harness improvements and model post-training}
         \resumeItemClean
-         {Delivered a policy-aware invoice intelligence system that parses receipts, enriches with Snowflake policy data, and runs evidence-backed validations to automate “read–query–verify–sign” for 5K+ invoices/day}
+          {Design and build evaluation environments and task suites for a custom agent harness to measure task success and trajectory quality, compare harness changes, and detect behavioral regressions}
         \resumeItemClean
-          {Designed a deep-research finance analyst agent that turns natural language into dashboards and slide decks—retrieving from databases/flat files to generate evidence-backed insights, visualizations, and cited narratives with grounding}
+          {Develop a recursive self-improvement (RSI) loop that translates agent execution feedback into proposed harness changes and evaluates candidate improvements for Google Cloud workflows}
+    \resumeItemListEnd
+
+    \resumeSubheading{Apple}{Cupertino, CA}
+    {Software Engineer  \(|\) \textbf{fine-tuning, inference, agents}}{July 2024 - June 2026}
+    \resumeItemListStart
         \resumeItemClean
- {Engineered an LLM-driven, multi-agent CI/CD pipeline that automates developer onboarding by dynamically reviewing uploaded codebases for syntax and security vulnerabilities before autonomously merging and creating pull requests.}
+         {Engineered an enterprise NL-to-SQL pipeline over 10K+ warehouse tables; fine-tuned a 7B Qwen2.5 planner with FSDP on 100K+ samples, using retrieval and negative rejection to ground JSON query plans}
+        \resumeItemClean
+         {Delivered a policy-aware invoice intelligence system combining receipt parsing, Snowflake policy retrieval, and evidence-backed validation to automate processing of 5K+ invoices/day}
+        \resumeItemClean
+          {Designed a deep-research finance analyst agent that retrieves from databases and flat files to produce dashboards, slide decks, and cited financial insights from natural-language requests}
        \resumeItemListEnd
        
   \resumeSubheading{Gap Inc}{San Francisco, CA}
     {Senior Software Engineer  \(|\) \textbf{ranking, retrieval, e-commerce}}{July 2023 - June 2024}
     \resumeItemListStart
         \resumeItemClean
- {Spearheaded a real-time personalization engine development, utilizing user access patterns to enhance user experience, significantly boosting engagement and sales conversions}
+ {Spearheaded development of a real-time personalization engine using user access patterns to tailor the e-commerce experience}
         \resumeItemClean
-          {Engineering a low-latency LLM-based information retrieval system to extract data from multi-source document corpus}
+          {Engineered a low-latency LLM-based retrieval system to extract information from a multi-source document corpus}
        \resumeItemListEnd
         
   \resumeSubheading{Amazon Web Services}{Palo Alto, CA}
-    {Software Development Engineer  \(|\) \textbf{big-data, etl, pyspark, athena, dynamodb}}{Dec 2022 - June 2023}
+    {Software Development Engineer \(|\) \textbf{data platforms, distributed systems}}{Dec 2022 - June 2023}
     \resumeItemListStart
-        \resumeItemClean
-          {Designed and published an internal query builder python package (ZenQL) tailored for AWS Healthlake}
-        \resumeItemClean
-          {Designed an event-driven server-less system using AWS services, allowing for parallel execution of tasks, resulting in seamless scaling to handle concurrent requests and improved processing throughput}
         \resumeItemClean
         {Designed and optimized complex SQL queries in Athena resulting in a 40\% reduction in query execution times}
         \resumeItemClean
         {Architected near real time data processing system using AWS CDK, leveraging PySpark for ETL transforms on multi-terabyte healthcare data sets}
         \resumeItemListEnd
         
-    \resumeSubheading{Brave Orbit (early stage startup)}{Capetown, South Africa}
-    {Founding engineer \(|\) \textbf{mobile-app, web-app, django, flutter}}{Jan 2020 - Aug 2021}
+    \resumeSubheading{Brave Orbit (early stage startup)}{Cape Town, South Africa}
+    {Founding Engineer \(|\) \textbf{Django, Flutter}}{Jan 2020 - Aug 2021}
     \resumeItemListStart
         \resumeItemClean
-            {Programmed a cross-platform app using BLoC pattern, implemented database, network and state management layers}
-          \resumeItemClean
-            {Engineered HIPAA compliant scalable async push notification service for medication reminder application}
-          \resumeItemClean
-            {Developed a task scheduler for clinical surveys that delivers email, SMS alerts and gathers response on a recurring basis}
-          \resumeItemClean
-            {Architected a custom ERP system with multi-product substitutions and combo-product life cycle tracking features}
+          {Built a cross-platform healthcare app and backend services for medication reminders and recurring clinical surveys, including asynchronous notifications, scheduling, and response collection}
     \resumeItemListEnd
 \resumeSubHeadingListEnd
 
@@ -172,6 +159,17 @@
 \resumeSubHeadingListEnd
 \vspace{-5pt}
 
+\section{Relevant skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Python, C++, SQL} \\
+     \textbf{ML \& Deep Learning}{: PyTorch, JAX, Hugging Face, PySpark} \\
+     \textbf{Agentic Systems}{: Agent evaluation, trajectory analysis, LangGraph, vLLM, RAG} \\
+     \textbf{Infra \& Backend}{: Kubernetes, FastAPI, Redis, Snowflake, GCP, AWS}
+    }}
+ \end{itemize}
+
+
 %-----------EDUCATION-----------------
 \section{Education}
   \resumeSubHeadingListStart
@@ -188,4 +186,3 @@
 \vspace{-8pt}
 
 \end{document}
-\end{itemsize}
